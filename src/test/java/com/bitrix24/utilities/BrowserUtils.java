@@ -19,6 +19,11 @@ public class BrowserUtils {
 
 //Test comment from Nurida
 
+
+// Test comment from Bilal
+
+=======
+
     /*
     Applies thread sleep without having to throw interrupted exception
      */
