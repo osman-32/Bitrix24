@@ -25,6 +25,8 @@ public class BrowserUtils {
             e.printStackTrace();
         }
     }
+    //comment Aizhan1
+
 
     /*
      * switches to new window by the exact title
