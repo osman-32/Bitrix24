@@ -3,11 +3,12 @@ package com.bitrix24.StepDefinitions;
 import com.bitrix24.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
-import io.cucumber.java.Scenario;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 
 public class Hooks {
+    @Before
+    public void setUp() {
+        Driver.getDriver().manage().window().maximize();
+    }
 
     @Before
     public void setUpScenario(){
@@ -27,13 +28,11 @@ public class Hooks {
             scenario.attach(screenshot, "image/png", scenario.getName());
         }
     }
-    /*
-
-     */
+    */
 
     @After
     public void tearDown(){
-        Driver.getDriver().close();
-
+        // Driver.getDriver().close();
+        Driver.closeDriver();
     }
 }
