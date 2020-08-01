@@ -17,7 +17,7 @@ public class Hooks {
     public  void setUpDatabaseConnection(){
         System.out.println("---->Before Annotation:DB connection created<---------");
     }
-    /*
+
     @After
     public void tearDownScenario(Scenario scenario) {
         if (scenario.isFailed()) {
@@ -27,13 +27,12 @@ public class Hooks {
             scenario.attach(screenshot, "image/png", scenario.getName());
         }
     }
-    /*
 
-     */
 
-    @After
-    public void tearDown(){
-        Driver.getDriver().close();
+   // @After
+    //public void tearDown(){
+      //  Driver.getDriver().close();
 
-    }
+   // }
+
 }
