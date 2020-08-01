@@ -15,6 +15,15 @@ import static org.junit.Assert.assertTrue;
 
 public class BrowserUtils {
 
+//Ilker abi
+
+//Test comment from Nurida
+
+
+// Test comment from Bilal
+
+=======
+
     /*
     Applies thread sleep without having to throw interrupted exception
      */
@@ -25,6 +34,8 @@ public class BrowserUtils {
             e.printStackTrace();
         }
     }
+    //comment Aizhan1
+
 
     /*
      * switches to new window by the exact title
