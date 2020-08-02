@@ -6,9 +6,14 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        plugin = {"html:targe/cucumber-report.html",
+                "json:target/cucumber.json",
+                "rerun:target/rerun.txt"
+        },
         features = "src/test/resources/features",
-        glue="com/bitrix24/stepdefinitions",
-        tags= ""
+        glue="com/bitrix24/step_definitions",
+        dryRun = false,
+        tags= "@task"
 )
 
 public class CukesRunner {
