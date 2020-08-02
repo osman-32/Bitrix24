@@ -13,10 +13,11 @@ import org.junit.runner.RunWith;
         glue="com/bitrix24/StepDefinitions",
         dryRun = false,
         tags= "@upload"
+
+
 )
 
 public class CukesRunner {
-    //comment
-
+  
 
 }
