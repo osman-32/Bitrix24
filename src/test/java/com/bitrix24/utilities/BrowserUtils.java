@@ -15,13 +15,6 @@ import static org.junit.Assert.assertTrue;
 
 public class BrowserUtils {
 
-//Ilker abi
-
-//Test comment from Nurida
-
-
-// Test comment from Bilal
-
     /*
     Applies thread sleep without having to throw interrupted exception
      */
