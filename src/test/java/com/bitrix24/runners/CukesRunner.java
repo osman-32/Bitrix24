@@ -12,7 +12,9 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue="com/bitrix24/StepDefinitions",
         dryRun = false,
-        tags= "@mention"
+        tags= "@upload"
+
+
 )
 
 public class CukesRunner {
