@@ -13,12 +13,13 @@ import java.util.ArrayList;
 
 public class DownloadDesktopClientStepDefinitions {
 
+    LoginPage login = new LoginPage();
     @Given("User logged in to Bitrix24")
     public void userLoggedInToBitrix24() {
 
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
 
-        LoginPage login = new LoginPage();
+
 
         String username = ConfigurationReader.getProperty("hr_username");
         String password = ConfigurationReader.getProperty("bitrix_password");
@@ -45,7 +46,7 @@ public class DownloadDesktopClientStepDefinitions {
     @Then("User should see Windows version of Bitrix downloaded")
     public void user_should_see_windows_version_of_bitrix_downloaded() throws InterruptedException{
         Thread.sleep(70000);
-        Assert.assertTrue(DownloadDesktopClientPage.isFileDownloaded("C:\\Users\\nghnn\\Downloads", "bitrix24_desktop.exe"));
+        Assert.assertTrue(DownloadDesktopClientPage.isFileDownloaded("C:\\Users\\ilker\\Downloads\\", "bitrix24_desktop.exe"));
     }
     @When("User should be able to click on Linux icon under Desktop Client")
     public void user_should_be_able_to_click_on_linux_icon_under_desktop_client() {

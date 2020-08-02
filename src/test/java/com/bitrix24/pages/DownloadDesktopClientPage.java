@@ -6,11 +6,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.io.File;
 
-public class DownloadDesktopClientPage {
+public class DownloadDesktopClientPage extends BasePage{
 
-        public DownloadDesktopClientPage() {
-            PageFactory.initElements(Driver.getDriver(), this);
-        }
+
 
         /*
         @FindBy(xpath = "//*[@id=\"sidebar\"]/div[6]/div[2]/a[1]")
@@ -28,7 +26,7 @@ public class DownloadDesktopClientPage {
                 File dir = new File(downloadPath);
                 File[] dirContents = dir.listFiles();
 
-                for (int i = 0; i < dirContents.length; i++) {
+               for (int i = 0; i < dirContents.length; i++) {
                         if (dirContents[i].getName().equals(fileName)) {
                                 // File has been found, it can now be deleted:
                                 // dirContents[i].delete();

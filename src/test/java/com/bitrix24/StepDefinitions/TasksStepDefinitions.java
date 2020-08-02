@@ -1,4 +1,4 @@
-package com.bitrix24.step_definitions;
+package com.bitrix24.stepdefinitions;
 
 import com.bitrix24.pages.LoginPage;
 import io.cucumber.java.en.Given;

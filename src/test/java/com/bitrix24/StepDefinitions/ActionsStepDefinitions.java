@@ -1,12 +1,12 @@
-package com.bitrix24.StepDefinitions;
+package com.bitrix24.stepdefinitions;
 
-import com.bitrix24.pages.ActionsPages;
+import com.bitrix24.pages.ActionsPage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class ActionsStepDefinitions {
 
-    ActionsPages actionsPages = new ActionsPages();
+    ActionsPage actionsPages = new ActionsPage();
 
     @When("User clicks on upload files icon")
     public void user_clicks_on_upload_files_icon() throws Exception {

@@ -14,15 +14,16 @@ import io.cucumber.java.en.When;
 public class BitrixStepDefinitions {
 
     ActionsPage actionsPage = new ActionsPage();
+    LandingPage landingPage = new LandingPage();
+
+    LoginPage loginPage = new LoginPage();
 
     @When("User clicks on upload files icon")
     public void user_clicks_on_upload_files_icon() {
 
-    LandingPage landingPage= new LandingPage();
-
-    LoginPage loginPage = new LoginPage();
 
 
+    }
     @When("User enters credentials on login page")
     public void user_enters_credentials_on_login_page() throws Exception {
 
