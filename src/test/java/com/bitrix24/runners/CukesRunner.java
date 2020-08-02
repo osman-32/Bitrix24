@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue="com/bitrix24/StepDefinitions",
         dryRun = false,
-        tags= "@upload"
+        tags= "@bitrix_download_client"
 
 
 

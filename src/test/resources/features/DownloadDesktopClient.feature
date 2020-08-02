@@ -8,8 +8,9 @@ Feature: As a PC user, I should be able to download Desktop version of the appli
     When User should be able to click on MacOs icon under Desktop Client
     Then User should see MacOS version of Bitrix downloaded
 
+
   Scenario: User should be able to download Bitrix Desktop client for Windows
-    When User should be able to click on Windows icon under Desktop Client
+    When User should be able to click on Windows icon under Desktop Client1
     Then User should see Windows version of Bitrix downloaded
 
   Scenario: User should be able to download Bitrix Desktop client for Linux
